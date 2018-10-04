@@ -3,20 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>Basic Quiz in JavaScript</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<style>
 		.top {
-			background-color: cornflowerblue;
-			color: white;
+			background-color: cornflowerblue!important;
+			color: white!important;
+			box-shadow: none!important;
 		}
+		
 	
 	</style>
 	
 </head>
 
 <body>
+	<div data-role="page">
 	<div class="container">
-	<div class="jumbotron top">
+	<div data-role="header" class="top">
+		<a href="index.html" data-role="button" data-transition="slide">back</a>
 <h2 class="text-center">Mini Quiz with JavaScript!</h2>
 		</div>
 		</div>
@@ -28,6 +33,7 @@
 	<button class="mt-3 mb-3 p-3 btn btn-secondary" type="submit" id="submit">Submit your answer!</button>
 </form>
 </div>
+		</div>
 <script>
 	// 2 globale variabler (konstanter)
 	const question = 'Who is the 45th president of the United States of America?';
@@ -57,5 +63,7 @@
 	
 	
 </script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
